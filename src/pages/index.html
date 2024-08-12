@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/vendor/base.css">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Melodies</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="grid">
+            <div class="row no-gutters">
+                <!-- Sidebar -->
+                <div class="col l-2 m-0 c-0">
+                    <div class="sidebar">
+                        <div class="sidebar_container">
+                            <div class="sidebar_logoo">
+                                <h2 class="sidebar_logoo_logo">Melodies</h2>
+                            </div>
+                            <div class="sidebar_menu">
+                                <h5 class="sidebar_menu_title">Menu</h5>
+                            </div>
+                            <div class="sidebar_list">
+                                <ul class="sidebar_list_item">
+                                    <li class="active" id="home" data-tab="home">
+                                        <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
+                                    </li>
+                                    <li class="" id="discover" data-tab="discover">
+                                        <a href="#"><i class="fas fa-compass"></i><span>Discover</span></a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#"><i class="fa-solid fa-compact-disc"></i><span>Albums</span></a>
+                                    </li>
+
+                                    <li class="">
+                                        <a href="#"><i class="fas fa-user"></i> <span></span>Profile</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar_menu">
+                                <h5 class="sidebar_menu_title">Library</h5>
+                            </div>
+                            <div class="sidebar_list">
+                                <ul class="sidebar_item">
+                                    <li class="">
+                                        <a href="#"><i class="fas fa-clock"></i><span>Recently Played</span></a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#"><i class="fa-solid fa-fire"></i><span>Most played</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar_menu">
+                                <h5 class="sidebar_menu_title">Playlist and Favorite</h5>
+                            </div>
+                            <div class="sidebar_list">
+                                <ul class="sidebar_item">
+                                    <li class="">
+                                        <a href="#"><i class="fa-solid fa-headphones-simple"></i><span>Your
+                                                favorites</span></a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="25"
+                                                viewBox="0 0 26 25" fill="none">
+                                                <g clip-path="url(#clip0_4_95)">
+                                                    <path
+                                                        d="M5.14587 15.9082V6.81641H2.87048C1.62048 6.81641 0.599976 7.83691 0.599976 9.0918V22.7295C0.599976 23.9795 1.62048 25 2.87048 25H16.5082C17.7631 25 18.7787 23.9795 18.7787 22.7295V20.459H9.69177C7.18201 20.4541 5.14587 18.418 5.14587 15.9082ZM23.3295 0H9.69177C8.43689 0 7.42126 1.02051 7.42126 2.27051V15.9082C7.42126 17.1631 8.44177 18.1787 9.69177 18.1787H23.3295C24.5844 18.1787 25.6 17.1582 25.6 15.9082V2.27051C25.6 1.02051 24.5795 0 23.3295 0ZM22.1918 10.2295H17.6459V14.7754H15.3754V10.2295H10.8295V7.95898H15.3754V3.4082H17.6459V7.9541H22.1918V10.2295Z"
+                                                        fill="#0E9EEF" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_4_95">
+                                                        <rect width="25" height="25" fill="white"
+                                                            transform="translate(0.599976)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg> Your playlist</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar_menu">
+                                <h5 class="sidebar_menu_title">Playlist and Favorite</h5>
+                            </div>
+                            <div class="sidebar_list">
+                                <ul class="sidebar_list_item">
+                                    <li class="">
+                                        <a href="#"><i class="fa-solid fa-gear"></i><span>Setting</span></a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="25"
+                                                viewBox="0 0 26 25" fill="none">
+                                                <path
+                                                    d="M17.2666 5.20833V4.16667C17.2666 3.59137 16.8003 3.125 16.225 3.125H6.84996C6.27465 3.125 5.80829 3.59137 5.80829 4.16667V20.8333C5.80829 21.4086 6.27466 21.875 6.84996 21.875H16.225C16.8003 21.875 17.2666 21.4086 17.2666 20.8333V19.7917"
+                                                    stroke="#EE10B0" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M11.0166 12.5H22.4749" stroke="#EE10B0" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <path d="M18.8291 8.85417L22.4749 12.5L18.8291 16.1458" stroke="#EE10B0"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg> Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main content -->
+                <div class="col l-10 m-12 c-12">
+                    <div class="content">
+                        <button onclick="" class="sidebar-toggle c-12 m-0 l-0">
+                            <i class="fas fa-bars"></i> Menu
+                        </button>
+                        <div class="row">
+                            <nav class="header">
+                                <div class="header_search">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                    <input type="text" placeholder="Search for songs, albums, or artists">
+                                </div>
+                                <div class="header_menu">
+                                    <ul class="header_menu_dropdown">
+                                        <li><a href="#">Profile</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header_login">
+                                    <button class="header_login_button">Login</button>
+                                    <button class="header_signup_button">Sign up</button>
+                                </div>
+
+                            </nav>
+                        </div>
+
+                    </div>
+
+                    <!-- Hero section -->
+                    <!-- Trending Songs -->
+                    <div class="row no-gutters">
+                        <div class="col l-12 m-12 c-12">
+                            <h2 class="section-title">Trending Songs</h2>
+                            <table class="trending-table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Song</th>
+                                        <th>Artist</th>
+                                        <th>Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Trending Song 1</td>
+                                        <td>Artist 1</td>
+                                        <td>3:45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Trending Song 2</td>
+                                        <td>Artist 2</td>
+                                        <td>4:20</td>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Popular Artists -->
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <h2 class="section-title">Popular Artists</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-2 m-3 c-4">
+                            <div class="artist-card">
+                                <img src="https://via.placeholder.com/100" alt="Artist 1">
+                                <h3>Artist Name 1</h3>
+                            </div>
+                        </div>
+                        <!-- Repeat for other artists -->
+                        <div class="col l-2 m-3 c-4">
+                            <div class="artist-card">
+                                <img src="https://via.placeholder.com/100" alt="Artist 2">
+                                <h3>Artist Name 2</h3>
+                            </div>
+                        </div>
+                        <!-- Add more artist cards as needed -->
+                    </div>
+
+                    <!-- Music Video -->
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <h2 class="section-title">Featured Music Videos</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="video-card">
+                                <img src="https://via.placeholder.com/300x200" alt="Video 1">
+                                <h3>Music Video Title 1</h3>
+                                <p>Artist Name</p>
+                            </div>
+                        </div>
+                        <!-- Repeat for other videos -->
+                        <div class="col l-4 m-6 c-12">
+                            <div class="video-card">
+                                <img src="https://via.placeholder.com/300x200" alt="Video 2">
+                                <h3>Music Video Title 2</h3>
+                                <p>Artist Name</p>
+                            </div>
+                        </div>
+                        <!-- Add more video cards as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="" src="/src/index.js"></script>
+</body>
+
+</html>

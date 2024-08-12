@@ -1,0 +1,122 @@
+// Import các file Sass cơ bản
+@import "base/reset";
+@import "base/typography";
+@import "base/utilities";
+
+// Import layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+
+// Import components
+@import "components/navbar";
+@import "components/sidebar";
+@import "components/card";
+@import "components/player";
+@import "components/footer";
+
+// Import pages
+@import "pages/home";
+@import "pages/discover";
+@import "pages/album";
+
+// Import theme
+@import "themes/colors";
+@import "themes/fonts";
+@import "themes/variables";
+.app {
+	font-family: Vazirmatn;
+	width: 100%;
+}
+
+.sidebar {
+	background-color: $color-sidebar;
+	height: 100vh;
+	color: $color-text;
+	width: 100%;
+	.sidebar_container {
+		width: 100%;
+	}
+	// logo
+	&_logoo {
+		padding: 50px 0 0 26.6px;
+		&_logo {
+			background: $color-logo;
+			background-clip: text;
+			font-size: 40px;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-family: Vazirmatn;
+			font-weight: 800;
+			font-style: normal;
+			line-height: normal;
+		}
+	}
+	// menu all
+	&_menu {
+		padding-left: 26.6px;
+		&_title {
+			font-family: Vazirmatn;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			color: $color-text-item;
+			opacity: 0.6;
+		}
+	}
+	&_list {
+		padding-left: 22.6px;
+		width: 100%;
+		&_item {
+			font-family: Vazirmatn;
+		}
+	}
+	li {
+		width: 226px;
+		height: 42px;
+		flex-shrink: 0;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 42px;
+		border-radius: 9px;
+		margin-bottom: 15px;
+		border-radius: 9px;
+		border: 1.117px #fff;
+
+		// opacity: 0.7;
+		filter: blur(0.18611110746860504px);
+		a {
+			color: $color-text;
+			text-decoration: none;
+		}
+		i {
+			width: $color-icon-font-size-smw;
+			height: $color-icon-font-size-smh;
+			padding: 2px 9px 2px 5px;
+			transform: transform 0.7s ease;
+			width: 10px;
+		}
+		span {
+			padding-left: 20px;
+		}
+	}
+	li:hover a i {
+		transform: scale(1.3);
+	}
+	.active {
+		border-radius: 9px;
+		border: 2.233px solid #fb37ff;
+		filter: blur(0.27916666865348816px);
+		background-color: $color-background;
+		transform: transform 0.5s ease;
+		opacity: 1;
+	}
+}
+// ------------------------------------content --------------------------------
+.content {
+	background-color: $color-content;
+	width: 100%;
+	height: 100vh;
+    padding-left: 21px;
+}
